@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+   <package name = "ma.course.web" extends = "struts-default">
+     
+      <action name = "Employee" 
+         class = "ma.course.web.action.EmployeeAction" 
+         method = "execute">
+         <result name = "success">/pages/employees.jsp</result>
+      </action>
+
+      <action name = "Department" 
+         class = "ma.course.web.action.DepartmentAction" 
+         method = "execute"
+         >
+         <result name = "success">/pages/departments.jsp</result>
+      </action>
+      
+   </package>
+   
+</struts>
